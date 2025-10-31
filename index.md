@@ -2,6 +2,26 @@
 
 Complete catalog of shareable Claude Code resources in this project.
 
+## Guidelines
+
+Reusable collaboration standards and configuration best practices.
+
+- **[Collaboration Guidelines](claude/guidelines/collaboration.md)** - Expert peer collaborator standards
+  - Universal guidelines for Claude Code collaboration on projects
+  - Covers asking clarifying questions, challenging design decisions, and prioritizing security/safety
+  - Shareable across projects via integration command or manual copy
+  - Example: Integrate with `/integrate-collaboration-guidelines`
+
+## Configuration Commands
+
+Slash commands for integrating guidelines and configuration into your Claude Code setup.
+
+- **[`/integrate-collaboration-guidelines`](claude/commands/integrate-collaboration-guidelines.md)** - Integrate collaboration guidelines into CLAUDE.md
+  - Intelligently integrates guidelines into global (`~/.claude/CLAUDE.md`) or project scope (`./.claude/CLAUDE.md`)
+  - Detects existing guidelines and offers update/skip options
+  - Defaults to global scope; use `--scope project` for project-specific integration
+  - Example: `/integrate-collaboration-guidelines` or `/integrate-collaboration-guidelines --scope project`
+
 ## Git Commands
 
 Slash commands for automating git workflow and feature branch management.
