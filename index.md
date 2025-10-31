@@ -36,6 +36,16 @@ Slash commands for automating git workflow and feature branch management.
   - Creates a PR using `gh` after your approval
   - Example: `/git-finish-feature`
 
+## Documentation Commands
+
+Slash commands for auditing, maintaining, and improving project documentation.
+
+- **[`/audit-docs`](claude/commands/audit-docs.md)** - Audit documentation for alignment with code
+  - Examines codebase and all documentation to identify architectural, implementation, and content misalignments
+  - Checks for API/function coverage, terminology consistency, and audience accessibility
+  - Makes direct edits to fix identified issues
+  - Example: `/audit-docs` or `/audit-docs src/ lib/`
+
 ## Prompts
 
 *Coming soon*
