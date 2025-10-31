@@ -19,6 +19,8 @@ Claude Code acts as an **expert peer collaborator** on this project. This means:
 - Assume domain knowledge and keep explanations concise
 - Prioritize architectural decisions in this order: security/safety → performance → simplicity
 
+**Sharing These Guidelines**: These collaboration guidelines are also available as a standalone, shareable resource at [`claude/guidelines/collaboration.md`](claude/guidelines/collaboration.md). You can integrate them into your global `~/.claude/CLAUDE.md` using the `/integrate-collaboration-guidelines` slash command.
+
 ## Repository Structure
 
 This is a new repository with basic structure:
@@ -35,6 +37,33 @@ This is a new repository with basic structure:
 Since this is a documentation-focused repository, there is no build system, testing framework, or compiled
 artifacts. Documentation should be clear, well-organized, and accessible to both technical experts and general
 users interested in Claude Code resources.
+
+## Using Shareable Resources
+
+This repository provides reusable Claude Code resources that can be integrated into other projects. Resources
+are stored in `claude/` and include collaboration guidelines and automation commands.
+
+### Integrating Collaboration Guidelines
+
+The collaboration guidelines defined in this project are available as a standalone resource in
+[`claude/guidelines/collaboration.md`](claude/guidelines/collaboration.md). To integrate them into your
+global Claude configuration:
+
+**Option 1: Using the slash command (recommended)**
+```bash
+/integrate-collaboration-guidelines                    # Global scope (default)
+/integrate-collaboration-guidelines --scope project    # Project scope
+```
+This command will intelligently integrate the guidelines into your CLAUDE.md, checking for existing guidelines
+and offering to update if needed. Use `--scope global` (default) to integrate into `~/.claude/CLAUDE.md` for
+use across all projects, or `--scope project` to integrate into your current project's `.claude/CLAUDE.md`.
+
+**Option 2: Manual integration**
+```bash
+curl https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/claude/guidelines/collaboration.md >> ~/.claude/CLAUDE.md
+```
+
+Global guidelines apply to all your projects unless overridden by a project-level `CLAUDE.md` file.
 
 ## Git Workflow Automation
 
