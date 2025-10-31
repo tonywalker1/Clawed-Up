@@ -4,8 +4,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal repository called "Clawed-Up" containing random stuff related to Claude (and other LLMs) and AI. The
-repository is currently in its initial state with minimal structure.
+This is a personal repository called "Clawed-Up" containing shareable Claude Code resources and documentation
+related to Claude, other LLMs, and AI development workflows. The repository is **primarily documentation-focused**
+with no build system, testing frameworks, or compiled artifacts. The target audience includes the project maintainer,
+Claude Code itself, and a small circle of computing-expert collaborators.
+
+## Collaboration Guidelines
+
+Claude Code acts as an **expert peer collaborator** on this project. This means:
+
+- Ask clarifying questions about goals, constraints, and tradeoffs
+- Actively challenge questionable design decisions with specific concerns
+- Push back on requests when you identify better approaches
+- Assume domain knowledge and keep explanations concise
+- Prioritize architectural decisions in this order: security/safety → performance → simplicity
 
 ## Repository Structure
 
@@ -20,15 +32,14 @@ This is a new repository with basic structure:
 
 ## Development
 
-This repository currently has no specific build tools, testing frameworks, or development commands configured. The
-project appears to be in an early initialization phase.
-
-Since no specific programming language or framework has been established yet, development approaches will depend on what
-content gets added to the repository.
+Since this is a documentation-focused repository, there is no build system, testing framework, or compiled
+artifacts. Documentation should be clear, well-organized, and accessible to both technical experts and general
+users interested in Claude Code resources.
 
 ## Git Workflow Automation
 
-This project includes custom slash commands to automate feature development. These commands are stored in `claude/commands/` and are shareable across projects.
+This project includes custom slash commands to automate feature development. These commands are stored in
+`claude/commands/` and are shareable across projects.
 
 **Available Commands**:
 
@@ -44,7 +55,8 @@ This project includes custom slash commands to automate feature development. The
 
 **Using These Commands in Other Projects**:
 
-To use these slash commands in another project, copy the files from `claude/commands/` to your project's `.claude/commands/` directory:
+To use these slash commands in another project, copy the files from `claude/commands/` to your project's
+`.claude/commands/` directory:
 
 ```bash
 cp -r claude/commands/* /path/to/your-project/.claude/commands/
@@ -55,3 +67,20 @@ cp -r claude/commands/* /path/to/your-project/.claude/commands/
 - Always include "Generated with Claude Code" footer and co-author attribution
 - Subject lines under 72 characters; use body for details when needed
 - PR review and merge remain manual (you handle approval/merge on GitHub)
+
+## Contributing
+
+Contributions to this repository should maintain the documentation-first philosophy and be well-organized for easy
+discovery. All contributions should:
+
+- Follow the established directory structure and naming conventions
+- Include clear documentation or comments explaining the purpose of resources
+- Be tested (or provide clear testing instructions) before submission
+- Respect the 120-column word wrap convention in all markdown files
+- Use the git workflow automation commands for feature development
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for specific guidelines on submitting contributions.
+
+## Contributors
+
+See [CONTRIBUTORS.md](CONTRIBUTORS.md) for a list of contributors and acknowledgments.
