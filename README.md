@@ -1,10 +1,13 @@
 # Clawed-Up
 
-A collection of shareable Claude Code resources including slash commands, prompts, and utilities for AI development workflows.
+A collection of shareable Claude Code resources including slash commands, prompts, and utilities for AI development
+workflows.
 
 ## Overview
 
-This repository contains reusable resources designed to work with [Claude Code](https://claude.com/claude-code) to automate common development tasks and workflows. All resources are organized by category and can be easily integrated into other projects.
+This repository contains reusable resources designed to work with [Claude Code](https://claude.com/claude-code) to
+automate common development tasks and workflows. All resources are organized by category and can be easily integrated
+into other projects.
 
 ## What's Included
 

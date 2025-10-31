@@ -1,3 +1,10 @@
+<!--
+Source: Clawed-Up (https://github.com/tonywalker1/Clawed-Up)
+License: MIT - See LICENSE file or https://opensource.org/licenses/MIT
+Copyright (c) 2025 Tony Walker
+Contributions welcome: https://github.com/tonywalker1/Clawed-Up/blob/main/CONTRIBUTING.md
+-->
+
 ---
 description: Start a new feature branch with optional custom branch name
 argument-hint: [description] [--branch-name custom-branch-name]
