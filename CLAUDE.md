@@ -12,6 +12,8 @@ repository is currently in its initial state with minimal structure.
 This is a new repository with basic structure:
 
 - `.idea/` - IntelliJ IDEA configuration files
+- `claude/` - Shareable Claude Code resources
+  - `commands/` - Custom slash commands for feature workflow automation
 - `LICENSE` - Project license
 - `README.md` - Basic project description
 - `.gitignore` - Git ignore rules (currently ignoring .idea directory)
@@ -26,29 +28,30 @@ content gets added to the repository.
 
 ## Git Workflow Automation
 
-**Feature Development Workflow**:
+This project includes custom slash commands to automate feature development. These commands are stored in `claude/commands/` and are shareable across projects.
 
-*Starting a new feature:*
-When you say "start feature: [description]" or similar, Claude will:
-- Update local main branch (`git pull origin main`)
-- Create new feature branch with auto-generated name from description
-- Check out the new branch
-- Example: "start feature: add user authentication" → branch `add-user-authentication`
+**Available Commands**:
 
-*Completing a feature:*
-When you say "finish feature" or ask to commit and create PR, Claude will:
-- Stage all relevant modified files
-- Draft commit message and PR description for your approval
-- After your approval: commit, push branch, and create PR using `gh`
-- Handle merge conflicts if they occur during the process
+- **`/git-start-feature [description]`** - Create and check out a new feature branch
+  - Auto-generates kebab-case branch names from description
+  - Optionally pass `--branch-name <custom-name>` to use a custom branch name
+  - Updates main branch before creating the feature branch
 
-**Branch and Message Conventions**:
+- **`/git-finish-feature`** - Complete a feature by committing, pushing, and creating a PR
+  - Stages relevant files, drafts commit message and PR description
+  - Waits for your approval before committing and pushing
+  - Creates a PR using `gh`
 
-- Branch naming: Auto-generated from description (kebab-case)
-- Commit message style: Imperative mood ("Add feature", not "Added feature")
+**Using These Commands in Other Projects**:
+
+To use these slash commands in another project, copy the files from `claude/commands/` to your project's `.claude/commands/` directory:
+
+```bash
+cp -r claude/commands/* /path/to/your-project/.claude/commands/
+```
+
+**Conventions**:
+- Commit messages use imperative mood ("Add feature", not "Added feature")
 - Always include "Generated with Claude Code" footer and co-author attribution
 - Subject lines under 72 characters; use body for details when needed
-
-**Manual Steps**:
 - PR review and merge remain manual (you handle approval/merge on GitHub)
-- Local branch cleanup after successful merge (Claude can help when requested)
