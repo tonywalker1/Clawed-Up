@@ -13,7 +13,10 @@ into other projects.
 
 See **[index.md](index.md)** for a complete catalog of available resources:
 
+- **Collaboration Guidelines** - Expert peer collaborator standards for working with Claude Code
 - **Git Commands** - Automate feature branch creation, commits, and pull requests
+- **Documentation Commands** - Audit and maintain project documentation
+- **Collaboration Commands** - Reflect on collaboration and improve your context
 - **Prompts** - Coming soon
 - **Utilities** - Coming soon
 
