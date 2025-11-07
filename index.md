@@ -46,6 +46,17 @@ Slash commands for auditing, maintaining, and improving project documentation.
   - Makes direct edits to fix identified issues
   - Example: `/audit-docs` or `/audit-docs src/ lib/`
 
+## Collaboration Commands
+
+Slash commands for improving collaboration and capturing insights from your work.
+
+- **[`/reflect`](claude/commands/reflect.md)** - Conduct a collaboration reflection after completing substantial work
+  - Capture what went well, what didn't work, and patterns worth remembering
+  - Suggest updates to your `CLAUDE.md` files based on insights
+  - Improve future collaboration by refining your context
+  - See [Reflection Workflow Guide](claude/guides/reflection-workflow.md) for detailed guidance
+  - Example: `/reflect`
+
 ## Prompts
 
 *Coming soon*

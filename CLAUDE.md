@@ -65,12 +65,14 @@ curl https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/claude/guideli
 
 Global guidelines apply to all your projects unless overridden by a project-level `CLAUDE.md` file.
 
-## Git Workflow Automation
+## Shareable Commands and Guides
 
-This project includes custom slash commands to automate feature development. These commands are stored in
-`claude/commands/` and are shareable across projects.
+This project includes custom slash commands and workflow guides designed for reuse across projects. These are
+stored in `claude/commands/` and `claude/guides/` and can be easily integrated into other projects.
 
-**Available Commands**:
+### Git Workflow Commands
+
+Automate feature branch creation, commits, and pull requests:
 
 - **`/git-start-feature [description]`** - Create and check out a new feature branch
   - Auto-generates kebab-case branch names from description
@@ -81,6 +83,16 @@ This project includes custom slash commands to automate feature development. The
   - Stages relevant files, drafts commit message and PR description
   - Waits for your approval before committing and pushing
   - Creates a PR using `gh`
+
+### Collaboration and Reflection
+
+Structured approaches to improving collaboration and capturing insights:
+
+- **`/reflect`** - Conduct a collaboration reflection after completing substantial work
+  - Capture what went well, what didn't work, and patterns worth remembering
+  - Suggest updates to your `CLAUDE.md` files based on insights
+  - Improve future collaboration by refining your context
+  - See [Reflection Workflow Guide](claude/guides/reflection-workflow.md) for detailed usage
 
 **Using These Commands in Other Projects**:
 
