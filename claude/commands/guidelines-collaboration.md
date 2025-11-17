@@ -12,6 +12,12 @@ argument-hint: [--scope global|project]
 
 You will help integrate the Clawed-Up collaboration guidelines into the user's Claude Code configuration.
 
+The collaboration guidelines include:
+- Quick reference for peer collaboration approach
+- Three-phase workflow (Discuss → Propose → Execute)
+- Communication preferences for presenting options and managing questions
+- Autonomy levels defining when to work independently vs. collaboratively
+
 **Arguments:**
 - `$ARGUMENTS`: Optional `--scope global|project` flag
   - `--scope global` (default): Integrate into `~/.claude/CLAUDE.md` for use across all projects
@@ -57,8 +63,8 @@ You will help integrate the Clawed-Up collaboration guidelines into the user's C
     - Provide the link to the source for reference
 
 **Example usages:**
-- `/integrate-collaboration-guidelines` → integrates into `~/.claude/CLAUDE.md` (default global scope)
-- `/integrate-collaboration-guidelines --scope project` → integrates into `./.claude/CLAUDE.md` locally
+- `/guidelines-collaboration` → integrates into `~/.claude/CLAUDE.md` (default global scope)
+- `/guidelines-collaboration --scope project` → integrates into `./.claude/CLAUDE.md` locally
 
 **Expected Outcome:**
 User's target CLAUDE.md file now includes the collaboration guidelines. If integrated globally, guidelines apply

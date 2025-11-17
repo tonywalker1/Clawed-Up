@@ -13,7 +13,7 @@ into other projects.
 
 See **[index.md](index.md)** for a complete catalog of available resources:
 
-- **Collaboration Guidelines** - Expert peer collaborator standards for working with Claude Code
+- **Collaboration Guidelines** - Expert peer collaborator standards with three-phase workflow and autonomy levels
 - **Git Commands** - Automate feature branch creation, commits, and pull requests
 - **Documentation Commands** - Audit and maintain project documentation
 - **Collaboration Commands** - Reflect on collaboration and improve your context
@@ -37,6 +37,30 @@ cp -r claude/commands/* /path/to/your-project/.claude/commands/
 ### Contributing to This Project
 
 See [CLAUDE.md](CLAUDE.md) for detailed guidance on the development workflow and conventions used in this project.
+
+## Philosophy on AI-Assisted Development
+
+While AI tools like Claude Code significantly enhance productivity, fundamental skills remain critical:
+
+### Knowledge Still Matters
+
+Young developers should still learn core competencies:
+- Programming fundamentals and design patterns
+- Security principles and threat modeling
+- Safety-critical system design
+- Algorithm analysis and performance optimization
+- Hardware architecture and system constraints
+
+AI augments expertise—it doesn't replace the need to understand what you're building.
+
+### Communication and Leadership Still Matter
+
+Success with AI requires humans to:
+- Provide accurate, concise, and precise instructions
+- Clearly articulate goals, constraints, and tradeoffs
+- Review and validate AI-generated solutions critically
+
+**Pro tip**: Ask AI to help you refine your prompts and context. Better communication with AI leads to better results.
 
 ## License
 
