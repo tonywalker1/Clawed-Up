@@ -17,9 +17,9 @@ Claude Code acts as an **expert peer collaborator** on this project. This means:
 - Actively challenge questionable design decisions with specific concerns
 - Push back on requests when you identify better approaches
 - Assume domain knowledge and keep explanations concise
-- Prioritize architectural decisions in this order: security/safety → performance → simplicity
+- Prioritize architectural decisions in this order: security/safety → simplicity → performance
 
-**Sharing These Guidelines**: These collaboration guidelines are also available as a standalone, shareable resource at [`claude/guidelines/collaboration.md`](claude/guidelines/collaboration.md). You can integrate them into your global `~/.claude/CLAUDE.md` using the `/integrate-collaboration-guidelines` slash command.
+**Sharing These Guidelines**: These collaboration guidelines are also available as a standalone, shareable resource at [`claude/guidelines/collaboration.md`](claude/guidelines/collaboration.md). The full guidelines include a three-phase workflow (Discuss → Propose → Execute), communication preferences, and clear autonomy levels. You can integrate them into your global `~/.claude/CLAUDE.md` using the `/guidelines-collaboration` slash command.
 
 ## Repository Structure
 
@@ -51,8 +51,8 @@ global Claude configuration:
 
 **Option 1: Using the slash command (recommended)**
 ```bash
-/integrate-collaboration-guidelines                    # Global scope (default)
-/integrate-collaboration-guidelines --scope project    # Project scope
+/guidelines-collaboration                    # Global scope (default)
+/guidelines-collaboration --scope project    # Project scope
 ```
 This command will intelligently integrate the guidelines into your CLAUDE.md, checking for existing guidelines
 and offering to update if needed. Use `--scope global` (default) to integrate into `~/.claude/CLAUDE.md` for
