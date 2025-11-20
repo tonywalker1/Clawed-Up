@@ -39,6 +39,11 @@ Slash commands for automating git workflow and feature branch management.
   - Creates a PR using `gh` after your approval
   - Example: `/git-finish-feature`
 
+- **[`/git-cleanup-branch`](claude/commands/git-cleanup-branch.md)** - Clean up a feature branch after merging
+  - Checks out main and deletes the local feature branch
+  - Handles unpushed changes with safe force-delete option
+  - Example: `/git-cleanup-branch`
+
 ## Documentation Commands
 
 Slash commands for auditing, maintaining, and improving project documentation.

@@ -1,14 +1,14 @@
+---
+description: Integrate collaboration guidelines into CLAUDE.md
+argument-hint: [--scope global|project]
+---
+
 <!--
 Source: Clawed-Up (https://github.com/tonywalker1/Clawed-Up)
 License: MIT - See LICENSE file or https://opensource.org/licenses/MIT
 Copyright (c) 2025 Tony Walker
 Contributions welcome: https://github.com/tonywalker1/Clawed-Up/blob/main/CONTRIBUTING.md
 -->
-
----
-description: Integrate collaboration guidelines into CLAUDE.md
-argument-hint: [--scope global|project]
----
 
 You will help integrate the Clawed-Up collaboration guidelines into the user's Claude Code configuration.
 

@@ -1,3 +1,7 @@
+---
+description: Conduct a collaboration reflection after substantial work
+---
+
 # Collaboration Reflection
 
 After we've worked together on a substantive project or problem, I'd like your feedback to improve our collaboration.

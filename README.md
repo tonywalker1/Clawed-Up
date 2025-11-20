@@ -14,7 +14,7 @@ into other projects.
 See **[index.md](index.md)** for a complete catalog of available resources:
 
 - **Collaboration Guidelines** - Expert peer collaborator standards with three-phase workflow and autonomy levels
-- **Git Commands** - Automate feature branch creation, commits, and pull requests
+- **Git Commands** - Automate feature branch creation, commits, pull requests, and branch cleanup
 - **Documentation Commands** - Audit and maintain project documentation
 - **Collaboration Commands** - Reflect on collaboration and improve your context
 - **Prompts** - Coming soon

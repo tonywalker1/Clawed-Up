@@ -1,3 +1,8 @@
+---
+description: Audit and align documentation with codebase
+argument-hint: [paths...]
+---
+
 <!--
 Source: Clawed-Up (https://github.com/tonywalker1/Clawed-Up)
 License: MIT - See LICENSE file or https://opensource.org/licenses/MIT

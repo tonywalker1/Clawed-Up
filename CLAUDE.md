@@ -84,6 +84,11 @@ Automate feature branch creation, commits, and pull requests:
   - Waits for your approval before committing and pushing
   - Creates a PR using `gh`
 
+- **`/git-cleanup-branch`** - Clean up a feature branch after merging
+  - Checks out main and deletes the local feature branch
+  - Handles unpushed changes with a force-delete option
+  - Keeps your local workspace tidy
+
 ### Collaboration and Reflection
 
 Structured approaches to improving collaboration and capturing insights:
@@ -105,7 +110,7 @@ cp -r claude/commands/* /path/to/your-project/.claude/commands/
 
 **Conventions**:
 - Commit messages use imperative mood ("Add feature", not "Added feature")
-- Always include "Generated with Claude Code" footer and co-author attribution
+- Include co-author attribution: `Co-Authored-By: Claude <noreply@anthropic.com>`
 - Subject lines under 72 characters; use body for details when needed
 - PR review and merge remain manual (you handle approval/merge on GitHub)
 
