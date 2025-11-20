@@ -79,6 +79,12 @@ Automate feature branch creation, commits, and pull requests:
   - Optionally pass `--branch-name <custom-name>` to use a custom branch name
   - Updates main branch before creating the feature branch
 
+- **`/git-commit`** - Stage changes, write a commit message, and commit
+  - Stages modified files related to your current work
+  - Drafts a commit message with co-author attribution
+  - Waits for your approval before committing
+  - Useful for making incremental commits while developing a feature
+
 - **`/git-finish-feature`** - Complete a feature by committing, pushing, and creating a PR
   - Stages relevant files, drafts commit message and PR description
   - Waits for your approval before committing and pushing

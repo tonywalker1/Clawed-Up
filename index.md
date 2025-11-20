@@ -34,6 +34,12 @@ Slash commands for automating git workflow and feature branch management.
   - Optionally pass `--branch-name <custom-name>` to use a custom branch name
   - Example: `/git-start-feature add user authentication`
 
+- **[`/git-commit`](claude/commands/git-commit.md)** - Stage changes, write a commit message, and commit
+  - Stages modified files and drafts a commit message with co-author attribution
+  - Waits for your approval before committing
+  - Useful for making incremental commits while developing a feature
+  - Example: `/git-commit`
+
 - **[`/git-finish-feature`](claude/commands/git-finish-feature.md)** - Complete a feature by committing, pushing, and creating a PR
   - Stages relevant files, drafts commit message and PR description
   - Creates a PR using `gh` after your approval
