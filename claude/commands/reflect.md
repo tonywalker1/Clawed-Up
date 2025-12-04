@@ -36,6 +36,26 @@ Based on the above, suggest concrete additions or clarifications to:
 
 Show both the conceptual idea *and* exact text that could be added, formatted as you'd include it.
 
+## Handling Global CLAUDE.md Changes
+
+After providing suggested updates:
+
+1. If updates involve `~/.claude/CLAUDE.md` changes, check whether `~/.claude` is a git repository
+2. If it IS a git repo:
+   - Ask the user: "Your ~/.claude directory appears to be version-controlled via git. Would you like me to commit these global CLAUDE.md changes to your remote?"
+   - If the user declines: Stop here. The changes are suggested but not committed.
+   - If the user agrees:
+     a. Switch to the `~/.claude` directory
+     b. Verify the changes to CLAUDE.md
+     c. Draft a commit message describing the reflection-based updates (e.g., "Refine collaboration patterns based on recent reflection")
+     d. Request user approval of the commit message
+     e. Execute: `git add CLAUDE.md && git commit -m "..."` (with approved message)
+     f. Execute: `git push` to the remote
+     g. Switch back to the original repository (the one where `/reflect` was invoked)
+     h. Confirm completion
+
+3. If it's NOT a git repo: Inform the user that `~/.claude` is not version-controlled, and changes are local-only.
+
 ## Token Budget
 
 Be thorough but pragmatic—prioritize wisdom over comprehensiveness if context is tight. Focus on the 3-5 most important
@@ -43,4 +63,5 @@ observations.
 
 ---
 
-If you'd like to update CLAUDE.md files as a result, I'm ready to help with that too.
+If you'd like to update CLAUDE.md files as a result, I'm ready to help with that too. If your ~/.claude directory is
+version-controlled, I can also help commit those changes to your remote.

@@ -81,6 +81,34 @@ existing `CLAUDE.md`, so you update it to prevent future confusion.
 You discover a way of asking questions or framing problems that leads to much better solutions. You document this
 pattern in your `CLAUDE.md` so it becomes the default approach.
 
+## Handling Version-Controlled Global Configuration
+
+If your `~/.claude` directory is managed as a git repository, the `/reflect` command includes support for committing
+global CLAUDE.md changes to your remote:
+
+1. After you provide reflection feedback and suggested CLAUDE.md updates, the command checks if `~/.claude` is a git repo
+2. If it is, you'll be asked whether you want to commit these changes to your remote
+3. If you agree:
+   - Claude Code switches to the `~/.claude` directory
+   - Drafts a commit message reflecting the collaboration insights
+   - Waits for your approval before committing
+   - Commits and pushes to your remote
+   - Switches back to your original working directory
+4. If you decline, the changes are applied locally but not committed
+
+This integration supports keeping your global collaboration context synced across machines while maintaining version
+history. Project-level CLAUDE.md changes are not affected by this workflow—those remain local to each project unless
+you manually commit them.
+
+### Prerequisites for Git Integration
+
+If you want this feature to work, ensure:
+- Your `~/.claude` directory is initialized as a git repository (`git init ~/.claude`)
+- You have a configured remote (typically `origin` on GitHub or another git host)
+- Your git credentials are set up to push to the remote
+
+If `~/.claude` is not a git repo, the command simply applies changes locally without prompting for commits.
+
 ## Integration with Workflow
 
 The reflection workflow is independent but pairs well with:
@@ -88,6 +116,8 @@ The reflection workflow is independent but pairs well with:
 - **After `/git-finish-feature`**: Once a feature is shipped, reflect on how the collaboration went
 - **After learning something new**: Capture insights about your own process or preferences
 - **Periodic reviews**: Schedule regular reflections (monthly, quarterly) to evolve your context
+- **Global config updates**: When reflecting across multiple projects, commit refined global preferences to your
+  version-controlled `~/.claude` directory
 
 ## Tips for Effective Reflection
 
