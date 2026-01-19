@@ -50,6 +50,12 @@ Slash commands for automating git workflow and feature branch management.
   - Handles unpushed changes with safe force-delete option
   - Example: `/git-cleanup-branch`
 
+- **[`/git-add-workflow-guidance`](claude/commands/git-add-workflow-guidance.md)** - Add git workflow best practices to CLAUDE.md
+  - Integrates git workflow guidance into global or project CLAUDE.md
+  - Reminds Claude Code to check branches before making changes
+  - Provides context for using the git workflow commands
+  - Example: `/git-add-workflow-guidance` or `/git-add-workflow-guidance --scope project`
+
 ## Documentation Commands
 
 Slash commands for auditing, maintaining, and improving project documentation.
