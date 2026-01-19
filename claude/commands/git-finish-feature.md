@@ -1,4 +1,5 @@
 ---
+name: git-finish-feature
 description: Use when a feature is complete and ready for review. Commits changes, pushes branch, creates PR.
 ---
 

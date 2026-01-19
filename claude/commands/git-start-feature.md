@@ -1,4 +1,5 @@
 ---
+name: git-start-feature
 description: Use when starting new work. Creates a feature branch from main with auto-generated or custom name.
 argument-hint: [ description ] [ --branch-name custom-branch-name ]
 ---

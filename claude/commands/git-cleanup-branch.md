@@ -1,4 +1,5 @@
 ---
+name: git-cleanup-branch
 description: Use after a PR is merged or branch is abandoned. Switches to main, deletes local feature branch.
 ---
 
