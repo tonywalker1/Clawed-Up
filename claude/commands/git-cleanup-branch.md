@@ -1,5 +1,5 @@
 ---
-description: Clean up a feature branch by checking out main and deleting it
+description: Use after a PR is merged or branch is abandoned. Switches to main, deletes local feature branch.
 ---
 
 <!--

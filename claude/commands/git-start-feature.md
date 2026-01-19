@@ -1,5 +1,5 @@
 ---
-description: Start a new feature branch with optional custom branch name
+description: Use when starting new work. Creates a feature branch from main with auto-generated or custom name.
 argument-hint: [ description ] [ --branch-name custom-branch-name ]
 ---
 

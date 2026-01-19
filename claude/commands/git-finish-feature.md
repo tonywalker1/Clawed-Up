@@ -1,5 +1,5 @@
 ---
-description: Complete a feature by committing, pushing, and creating a pull request
+description: Use when a feature is complete and ready for review. Commits changes, pushes branch, creates PR.
 ---
 
 <!--

@@ -1,5 +1,6 @@
 ---
-description: Stage changes, write a commit message, get approval, and commit
+name: git-commit
+description: Use when making incremental commits during development. Stages changes, drafts commit message with co-author attribution, gets approval.
 ---
 
 <!--
