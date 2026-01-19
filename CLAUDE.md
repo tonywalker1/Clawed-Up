@@ -21,6 +21,18 @@ Claude Code acts as an **expert peer collaborator** on this project. This means:
 
 **Sharing These Guidelines**: These collaboration guidelines are also available as a standalone, shareable resource at [`claude/guidelines/collaboration.md`](claude/guidelines/collaboration.md). The full guidelines include a three-phase workflow (Discuss → Propose → Execute), communication preferences, and clear autonomy levels. You can integrate them into your global `~/.claude/CLAUDE.md` using the `/guidelines-collaboration` slash command.
 
+## Git Workflow
+
+When working on this project:
+
+- **Starting work**: Before making changes, check current branch with `git branch --show-current`
+  - If on main/master and working on a feature or non-trivial change, create a feature branch first using `/git-start-feature`
+- **Incremental commits**: Use `/git-commit` for commits during development (handles staging, message drafting, co-author attribution)
+- **Completing features**: Use `/git-finish-feature` to commit, push, and create a PR
+- **After merge**: Use `/git-cleanup-branch` to clean up the local feature branch
+
+**Note:** For projects that commit directly to main, `/git-commit` will offer the choice to proceed on main or create a feature branch.
+
 ## Repository Structure
 
 This is a new repository with basic structure:
