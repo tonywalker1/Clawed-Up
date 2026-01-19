@@ -14,7 +14,12 @@ You will help complete a feature branch and create a pull request.
 **Steps:**
 
 1. **Check current state:**
-   - Verify you're on a feature branch (not main)
+   - Get current branch name: `git branch --show-current`
+   - If on `main` or `master`:
+     - Inform the user that `/git-finish-feature` requires a feature branch
+     - Cannot create a PR from main to main
+     - Suggest using `/git-start-feature` to create a feature branch first
+     - Stop execution
    - Check for uncommitted changes: `git status`
 
 2. **Stage relevant files:**

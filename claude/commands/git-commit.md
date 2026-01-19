@@ -15,7 +15,13 @@ You will help create an incremental commit on the current branch.
 **Steps:**
 
 1. **Check current state:**
-   - Verify you're on a feature branch (not main)
+   - Get current branch name: `git branch --show-current`
+   - If on `main` or `master`:
+     - Inform the user that committing directly to main is generally discouraged
+     - Offer two options:
+       1. Create a feature branch first using `/git-start-feature` (recommended)
+       2. Proceed with commit to main anyway
+     - Wait for user to choose before proceeding
    - Check for uncommitted changes: `git status`
 
 2. **Stage relevant files:**
