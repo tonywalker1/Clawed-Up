@@ -39,7 +39,7 @@ This is a new repository with basic structure:
 
 - `.idea/` - IntelliJ IDEA configuration files
 - `claude/` - Shareable Claude Code resources
-  - `commands/` - Custom slash commands for feature workflow automation
+  - `skills/` - Custom skills for feature workflow automation
 - `LICENSE` - Project license
 - `README.md` - Basic project description
 - `.gitignore` - Git ignore rules (currently ignoring .idea directory)
@@ -53,7 +53,7 @@ users interested in Claude Code resources.
 ## Using Shareable Resources
 
 This repository provides reusable Claude Code resources that can be integrated into other projects. Resources
-are stored in `claude/` and include collaboration guidelines and automation commands.
+are stored in `claude/` and include collaboration guidelines and automation skills.
 
 ### Integrating Collaboration Guidelines
 
@@ -61,12 +61,12 @@ The collaboration guidelines defined in this project are available as a standalo
 [`claude/guidelines/collaboration.md`](claude/guidelines/collaboration.md). To integrate them into your
 global Claude configuration:
 
-**Option 1: Using the slash command (recommended)**
+**Option 1: Using the skill (recommended)**
 ```bash
 /guidelines-collaboration                    # Global scope (default)
 /guidelines-collaboration --scope project    # Project scope
 ```
-This command will intelligently integrate the guidelines into your CLAUDE.md, checking for existing guidelines
+This skill will intelligently integrate the guidelines into your CLAUDE.md, checking for existing guidelines
 and offering to update if needed. Use `--scope global` (default) to integrate into `~/.claude/CLAUDE.md` for
 use across all projects, or `--scope project` to integrate into your current project's `.claude/CLAUDE.md`.
 
@@ -77,12 +77,12 @@ curl https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/claude/guideli
 
 Global guidelines apply to all your projects unless overridden by a project-level `CLAUDE.md` file.
 
-## Shareable Commands and Guides
+## Shareable Skills and Guides
 
-This project includes custom slash commands and workflow guides designed for reuse across projects. These are
-stored in `claude/commands/` and `claude/guides/` and can be easily integrated into other projects.
+This project includes custom skills and workflow guides designed for reuse across projects. These are
+stored in `claude/skills/` and `claude/guides/` and can be easily integrated into other projects.
 
-### Git Workflow Commands
+### Git Workflow Skills
 
 Automate feature branch creation, commits, and pull requests:
 
@@ -117,13 +117,13 @@ Structured approaches to improving collaboration and capturing insights:
   - Improve future collaboration by refining your context
   - See [Reflection Workflow Guide](claude/guides/reflection-workflow.md) for detailed usage
 
-**Using These Commands in Other Projects**:
+**Using These Skills in Other Projects**:
 
-To use these slash commands in another project, copy the files from `claude/commands/` to your project's
-`.claude/commands/` directory:
+To use these skills in another project, copy the files from `claude/skills/` to your project's
+`.claude/skills/` directory:
 
 ```bash
-cp -r claude/commands/* /path/to/your-project/.claude/commands/
+cp -r claude/skills/* /path/to/your-project/.claude/skills/
 ```
 
 **Conventions**:
@@ -141,7 +141,7 @@ discovery. All contributions should:
 - Include clear documentation or comments explaining the purpose of resources
 - Be tested (or provide clear testing instructions) before submission
 - Respect the 120-column word wrap convention in all markdown files
-- Use the git workflow automation commands for feature development
+- Use the git workflow automation skills for feature development
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for specific guidelines on submitting contributions.
 
