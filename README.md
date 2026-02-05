@@ -1,6 +1,6 @@
 # Clawed-Up
 
-A collection of shareable Claude Code resources including slash commands, prompts, and utilities for AI development
+A collection of shareable Claude Code resources including skills, prompts, and utilities for AI development
 workflows.
 
 ## Overview
@@ -14,9 +14,9 @@ into other projects.
 See **[index.md](index.md)** for a complete catalog of available resources:
 
 - **Collaboration Guidelines** - Expert peer collaborator standards with three-phase workflow and autonomy levels
-- **Git Commands** - Automate feature branch creation, commits, pull requests, and branch cleanup
-- **Documentation Commands** - Audit and maintain project documentation
-- **Collaboration Commands** - Reflect on collaboration and improve your context
+- **Git Skills** - Automate feature branch creation, commits, pull requests, and branch cleanup
+- **Documentation Skills** - Audit and maintain project documentation
+- **Collaboration Skills** - Reflect on collaboration and improve your context
 - **Prompts** - Coming soon
 - **Utilities** - Coming soon
 
@@ -28,11 +28,11 @@ See **[index.md](index.md)** for a complete catalog of available resources:
 2. Copy the resources you need to your project's `.claude/` directory:
 
 ```bash
-# Copy Git commands
-cp -r claude/commands/* /path/to/your-project/.claude/commands/
+# Copy Git skills
+cp -r claude/skills/* /path/to/your-project/.claude/skills/
 ```
 
-3. Use the commands with Claude Code (e.g., `/git-start-feature add user authentication`)
+3. Use the skills with Claude Code (e.g., `/git-start-feature add user authentication`)
 
 ### Contributing to This Project
 

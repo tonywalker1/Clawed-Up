@@ -20,7 +20,7 @@ If you contribute to this project, we'd love to acknowledge your work. When your
 
 ## Contribution Types We Appreciate
 
-- Sharing Claude Code resources (commands, prompts, utilities)
+- Sharing Claude Code resources (skills, prompts, utilities)
 - Improving documentation and examples
 - Reporting and fixing bugs
 - Suggesting improvements or new features

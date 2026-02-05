@@ -60,7 +60,7 @@ Since this is a documentation-focused repository:
 
 ## Guidelines for Different Contribution Types
 
-### New Commands or Utilities
+### New Skills or Utilities
 
 - Add to the appropriate directory in `claude/`
 - Include comprehensive documentation in comments
