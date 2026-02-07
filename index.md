@@ -14,6 +14,25 @@ Reusable collaboration standards and configuration best practices.
   - Shareable across projects via integration command or manual copy
   - Example: Integrate with `/guidelines-collaboration`
 
+## Guides
+
+Workflow guides and tutorials for managing Claude Code configurations and collaboration.
+
+- **[Version Control Guide](claude/guides/version-control-claude.md)** - Version control your `~/.claude` directory
+  - Track changes to your Claude Code configuration over time
+  - Sync configurations across multiple machines
+  - Share best practices with collaborators
+  - Covers both existing setups and starting fresh
+  - Includes production-tested `.gitignore` example
+  - Quick start with private GitHub repository setup
+
+- **[Reflection Workflow Guide](claude/guides/reflection-workflow.md)** - Conduct collaboration reflections
+  - Structured approach to capturing insights after substantial work
+  - Four reflection prompts: what worked, what didn't, patterns, and CLAUDE.md updates
+  - Git integration for version-controlled global configurations
+  - Pairs well with `/git-finish-feature` for post-feature reflection
+  - Used with `/reflect` skill for guided reflection sessions
+
 ## Configuration Skills
 
 Skills for integrating guidelines and configuration into your Claude Code setup.
