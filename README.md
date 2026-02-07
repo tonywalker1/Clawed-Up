@@ -14,6 +14,7 @@ into other projects.
 See **[index.md](index.md)** for a complete catalog of available resources:
 
 - **Collaboration Guidelines** - Expert peer collaborator standards with three-phase workflow and autonomy levels
+- **Guides** - Workflow guides and tutorials for managing Claude Code configurations and collaboration
 - **Git Skills** - Automate feature branch creation, commits, pull requests, and branch cleanup
 - **Documentation Skills** - Audit and maintain project documentation
 - **Collaboration Skills** - Reflect on collaboration and improve your context
