@@ -40,6 +40,9 @@ This is a new repository with basic structure:
 - `.idea/` - IntelliJ IDEA configuration files
 - `claude/` - Shareable Claude Code resources
   - `skills/` - Custom skills for feature workflow automation
+  - `guides/` - Workflow guides and tutorials
+  - `guidelines/` - Collaboration frameworks and best practices
+  - `examples/` - Production-tested configuration examples
 - `LICENSE` - Project license
 - `README.md` - Basic project description
 - `.gitignore` - Git ignore rules (currently ignoring .idea directory)
@@ -116,6 +119,17 @@ Structured approaches to improving collaboration and capturing insights:
   - Suggest updates to your `CLAUDE.md` files based on insights
   - Improve future collaboration by refining your context
   - See [Reflection Workflow Guide](claude/guides/reflection-workflow.md) for detailed usage
+
+### Configuration Management
+
+Guides for managing your Claude Code configuration:
+
+- **[Version Control Guide](claude/guides/version-control-claude.md)** - Version control your `~/.claude`
+  directory
+  - Track changes to your Claude Code configuration over time
+  - Sync configurations across multiple machines
+  - Share best practices with collaborators
+  - Covers both existing setups and starting fresh
 
 **Using These Skills in Other Projects**:
 
