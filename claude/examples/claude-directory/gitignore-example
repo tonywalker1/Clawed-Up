@@ -1,0 +1,27 @@
+# Claude Code runtime directories - not synced across devices
+debug/
+file-history/
+ide/
+session-env/
+shell-snapshots/
+statsig/
+tasks/
+todos/
+
+# Project-specific data
+projects/
+plugins/
+
+# Sensitive credentials
+.credentials.json
+
+# Session history
+history.jsonl
+stats-cache.json
+cache/
+paste-cache/
+
+# Session artifacts
+plans/
+telemetry/
+downloads/
