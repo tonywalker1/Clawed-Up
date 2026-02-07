@@ -47,6 +47,24 @@ This is a new repository with basic structure:
 - `README.md` - Basic project description
 - `.gitignore` - Git ignore rules (currently ignoring .idea directory)
 
+## Documentation Maintenance
+
+When adding new resources to the `claude/` directory:
+
+1. **Create content** in the appropriate subdirectory (`skills/`, `guides/`, `guidelines/`, `examples/`)
+2. **Update index.md**:
+   - Add entry to the relevant section (Guides, Skills, etc.)
+   - Include bullet points describing key features/capabilities
+   - Show usage examples where applicable
+3. **Update README.md**:
+   - Add high-level mention in "What's Included" section
+   - Keep descriptions concise (one line per category)
+4. **Update CLAUDE.md** (this file):
+   - If it's a skill, add to the skills section with usage examples
+   - If it's a guide, add to relevant section with brief description
+
+This ensures resources are discoverable through multiple navigation paths.
+
 ## Development
 
 Since this is a documentation-focused repository, there is no build system, testing framework, or compiled
