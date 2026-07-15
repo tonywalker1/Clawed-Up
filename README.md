@@ -23,17 +23,17 @@ See **[index.md](index.md)** for a complete catalog of available resources:
 
 ## Quick Start
 
-### Using Resources in Your Project
+### Installing as a Plugin
 
-1. Clone or download this repository
-2. Copy the resources you need to your project's `.claude/` directory:
+1. Add the marketplace and install the plugin:
 
 ```bash
-# Copy Git skills
-cp -r claude/skills/* /path/to/your-project/.claude/skills/
+/plugin marketplace add tonywalker1/Clawed-Up
+/plugin install clawed-up@clawed-up
 ```
 
-3. Use the skills with Claude Code (e.g., `/git-start-feature add user authentication`)
+2. Use the skills with Claude Code, namespaced under `clawed-up:` (e.g., `/clawed-up:git-start-feature add user
+   authentication`)
 
 ### Contributing to This Project
 

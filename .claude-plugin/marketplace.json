@@ -1,0 +1,14 @@
+{
+  "name": "clawed-up",
+  "description": "Git workflow automation, documentation maintenance, and collaboration skills for Claude Code",
+  "owner": {
+    "name": "Tony Walker"
+  },
+  "plugins": [
+    {
+      "name": "clawed-up",
+      "source": "./",
+      "description": "Git workflow automation, documentation maintenance, and collaboration skills for Claude Code"
+    }
+  ]
+}

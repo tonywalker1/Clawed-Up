@@ -32,4 +32,4 @@ Have a useful configuration or pattern? Contributions are welcome! Examples shou
 - Follow the repository's documentation standards
 - Protect sensitive information (no credentials, tokens, or personal data)
 
-See [CONTRIBUTING.md](../../CONTRIBUTING.md) for contribution guidelines.
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for contribution guidelines.
