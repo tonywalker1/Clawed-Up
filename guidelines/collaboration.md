@@ -83,6 +83,6 @@ To use these guidelines in your project:
    curl https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/guidelines/collaboration.md >> ~/.claude/CLAUDE.md
    ```
 
-2. Or use the `/guidelines-collaboration` slash command if available in your project
+2. Or use the `/clawed-up:guidelines-collaboration` slash command if the plugin is installed
 
 3. Customize as needed for your specific context and team

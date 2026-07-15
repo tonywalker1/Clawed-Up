@@ -32,12 +32,12 @@ Claude Code acts as an **expert peer collaborator** on this project. This means:
 When working on this project:
 
 - **Starting work**: Before making changes, check current branch with `git branch --show-current`
-  - If on main/master and working on a feature or non-trivial change, create a feature branch first using `/git-start-feature`
-- **Incremental commits**: Use `/git-commit` for commits during development (handles staging, message drafting, co-author attribution)
-- **Completing features**: Use `/git-finish-feature` to commit, push, and create a PR
-- **After merge**: Use `/git-cleanup-branch` to clean up the local feature branch
+  - If on main/master and working on a feature or non-trivial change, create a feature branch first using `/clawed-up:git-start-feature`
+- **Incremental commits**: Use `/clawed-up:git-commit` for commits during development (handles staging, message drafting, co-author attribution)
+- **Completing features**: Use `/clawed-up:git-finish-feature` to commit, push, and create a PR
+- **After merge**: Use `/clawed-up:git-cleanup-branch` to clean up the local feature branch
 
-**Note:** For projects that commit directly to main, `/git-commit` will offer the choice to proceed on main or create a feature branch.
+**Note:** For projects that commit directly to main, `/clawed-up:git-commit` will offer the choice to proceed on main or create a feature branch.
 
 ## Repository Structure
 

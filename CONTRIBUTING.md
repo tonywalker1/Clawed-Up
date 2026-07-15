@@ -15,7 +15,7 @@ from computing experts and Claude enthusiasts.
 Use the provided git workflow automation:
 
 ```bash
-/git-start-feature your feature description
+/clawed-up:git-start-feature your feature description
 ```
 
 This will create a properly-named feature branch and update your local main branch.
@@ -32,7 +32,7 @@ This will create a properly-named feature branch and update your local main bran
 Use the git workflow automation to complete your feature:
 
 ```bash
-/git-finish-feature
+/clawed-up:git-finish-feature
 ```
 
 This command will:
