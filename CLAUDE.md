@@ -25,7 +25,7 @@ Claude Code acts as an **expert peer collaborator** on this project. This means:
 - Assume domain knowledge and keep explanations concise
 - Prioritize architectural decisions in this order: security/safety → simplicity → performance
 
-**Sharing These Guidelines**: These collaboration guidelines are also available as a standalone, shareable resource at [`guidelines/collaboration.md`](guidelines/collaboration.md). The full guidelines include a three-phase workflow (Discuss → Propose → Execute), communication preferences, and clear autonomy levels. You can integrate them into your global `~/.claude/CLAUDE.md` using the `/clawed-up:guidelines-collaboration` slash command (once the plugin is installed).
+**Sharing These Guidelines**: These collaboration guidelines are also available as a standalone, shareable resource at [`guidelines/collaboration.md`](guidelines/collaboration.md). The full guidelines include a three-phase workflow (Discuss → Propose → Execute) and clear autonomy levels. You can integrate them into your global `~/.claude/CLAUDE.md` using the `/clawed-up:guidelines-collaboration` slash command (once the plugin is installed).
 
 ## Git Workflow
 
