@@ -1,0 +1,11 @@
+{
+  "name": "clawed-up",
+  "description": "Git workflow automation, documentation maintenance, and collaboration skills for Claude Code",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tony Walker"
+  },
+  "homepage": "https://github.com/tonywalker1/Clawed-Up",
+  "repository": "https://github.com/tonywalker1/Clawed-Up",
+  "license": "MIT"
+}

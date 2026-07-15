@@ -37,7 +37,7 @@ cd ~/.claude
 
 # Get the production-tested .gitignore
 curl -o .gitignore \
-  https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/claude/examples/claude-directory/gitignore-example
+  https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/examples/claude-directory/gitignore-example
 
 # Initialize and commit
 git init
@@ -66,7 +66,7 @@ Create a `.gitignore` file to exclude sensitive and temporary files.
 ```bash
 # Copy the comprehensive example from this repository
 curl -o ~/.claude/.gitignore \
-  https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/claude/examples/claude-directory/gitignore-example
+  https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/examples/claude-directory/gitignore-example
 ```
 
 **Option B: Create a basic one manually**
@@ -103,7 +103,7 @@ downloads/
 EOF
 ```
 
-See [`claude/examples/claude-directory/gitignore-example`](../examples/claude-directory/gitignore-example) for a
+See [`examples/claude-directory/gitignore-example`](../examples/claude-directory/gitignore-example) for a
 complete, production-tested version.
 
 ### Step 2: Initialize the Git Repository
@@ -219,7 +219,7 @@ git init
 ```bash
 # Download the comprehensive example
 curl -o .gitignore \
-  https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/claude/examples/claude-directory/gitignore-example
+  https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/examples/claude-directory/gitignore-example
 ```
 
 **Option B: Create a basic one manually**

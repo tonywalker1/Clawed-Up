@@ -18,7 +18,7 @@ Integrate collaboration guidelines into a CLAUDE.md file.
 1. Determine target file based on scope
 2. Verify target exists (if not, provide minimal CLAUDE.md example)
 3. Fetch guidelines from:
-   `https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/claude/guidelines/collaboration.md`
+   `https://raw.githubusercontent.com/tonywalker1/Clawed-Up/main/guidelines/collaboration.md`
 4. Check if "Collaboration Guidelines" section already exists
    - If yes: ask user to update (overwrite), skip, or view current
 5. Insert guidelines:

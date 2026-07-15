@@ -62,7 +62,7 @@ Since this is a documentation-focused repository:
 
 ### New Skills or Utilities
 
-- Add to the appropriate directory in `claude/`
+- Add to the appropriate top-level directory (`skills/`, `guides/`, `guidelines/`, `examples/`)
 - Include comprehensive documentation in comments
 - Provide usage examples
 - Update the relevant index or README file
