@@ -46,10 +46,9 @@ When working on this project:
 - `guides/` - Workflow guides and tutorials
 - `guidelines/` - Collaboration frameworks and best practices
 - `examples/` - Production-tested configuration examples
-- `.idea/` - IntelliJ IDEA configuration files
 - `LICENSE` - Project license
 - `README.md` - Basic project description
-- `.gitignore` - Git ignore rules (currently ignoring .idea directory)
+- `.gitignore` - Git ignore rules
 
 ## Documentation Maintenance
 
