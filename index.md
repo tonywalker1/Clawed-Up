@@ -9,7 +9,6 @@ Reusable collaboration standards and configuration best practices.
 - **[Collaboration Guidelines](guidelines/collaboration.md)** - Expert peer collaborator standards
   - Universal guidelines for Claude Code collaboration on projects
   - Three-phase workflow (Discuss → Propose → Execute) with clear autonomy levels
-  - Communication preferences and execution style guidance
   - Prioritizes security/safety → simplicity → performance
   - Shareable across projects via integration command or manual copy
   - Example: Integrate with `/clawed-up:guidelines-collaboration`
@@ -39,7 +38,7 @@ Skills for integrating guidelines and configuration into your Claude Code setup.
 
 - **[`/clawed-up:guidelines-collaboration`](skills/guidelines-collaboration/SKILL.md)** - Integrate collaboration guidelines into CLAUDE.md
   - Intelligently integrates guidelines into global (`~/.claude/CLAUDE.md`) or project scope (`./.claude/CLAUDE.md`)
-  - Includes three-phase workflow, communication preferences, and autonomy levels
+  - Includes three-phase workflow and autonomy levels
   - Detects existing guidelines and offers update/skip options
   - Defaults to global scope; use `--scope project` for project-specific integration
   - Example: `/clawed-up:guidelines-collaboration` or `/clawed-up:guidelines-collaboration --scope project`

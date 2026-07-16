@@ -25,10 +25,10 @@ Add git workflow guidance to a CLAUDE.md file.
 
 This project uses a feature-branch workflow:
 
-- **Start work**: `/git-start-feature <description>` creates a branch from updated main
-- **Commit**: Use `/git-commit` (from commit-commands plugin) for incremental commits
-- **Finish**: `/git-finish-feature` commits remaining changes, pushes, and creates PR
-- **Cleanup**: `/git-cleanup-branch` deletes local branch after PR merge
+- **Start work**: `/clawed-up:git-start-feature <description>` creates a branch from updated main
+- **Commit**: Use `/clawed-up:git-commit` for incremental commits
+- **Finish**: `/clawed-up:git-finish-feature` commits remaining changes, pushes, and creates PR
+- **Cleanup**: `/clawed-up:git-cleanup-branch` deletes local branch after PR merge
 
 Direct commits to main are discouraged. Create a feature branch for any non-trivial change.
 ```

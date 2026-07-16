@@ -26,5 +26,5 @@ Create a new feature branch from an updated main branch.
 4. Confirm the new branch is active
 
 **Examples:**
-- `/git-start-feature add-user-auth` → creates branch `add-user-auth`
-- `/git-start-feature` → prompts for branch name
+- `/clawed-up:git-start-feature add-user-auth` → creates branch `add-user-auth`
+- `/clawed-up:git-start-feature` → prompts for branch name

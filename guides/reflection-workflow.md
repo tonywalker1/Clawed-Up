@@ -4,7 +4,7 @@ A structured approach to capturing insights and improving collaboration with Cla
 
 ## Purpose
 
-The `/reflect` command provides a framework for retrospective feedback after working through a project or problem
+The `/clawed-up:reflect` command provides a framework for retrospective feedback after working through a project or problem
 with Claude Code. This is not about blame or criticism—it's about systematic reflection to:
 
 - Identify patterns in successful collaboration (both what works in your workflow and what Claude Code does well)
@@ -14,7 +14,7 @@ with Claude Code. This is not about blame or criticism—it's about systematic r
 
 ## When to Use It
 
-Invoke `/reflect` when:
+Invoke `/clawed-up:reflect` when:
 
 - You've completed a substantial feature, project, or problem-solving session
 - You've encountered situations where collaboration could have been smoother
@@ -83,7 +83,7 @@ pattern in your `CLAUDE.md` so it becomes the default approach.
 
 ## Handling Version-Controlled Global Configuration
 
-If your `~/.claude` directory is managed as a git repository, the `/reflect` command includes support for committing
+If your `~/.claude` directory is managed as a git repository, the `/clawed-up:reflect` command includes support for committing
 global CLAUDE.md changes to your remote:
 
 1. After you provide reflection feedback and suggested CLAUDE.md updates, the command checks if `~/.claude` is a git repo
@@ -113,7 +113,7 @@ If `~/.claude` is not a git repo, the command simply applies changes locally wit
 
 The reflection workflow is independent but pairs well with:
 
-- **After `/git-finish-feature`**: Once a feature is shipped, reflect on how the collaboration went
+- **After `/clawed-up:git-finish-feature`**: Once a feature is shipped, reflect on how the collaboration went
 - **After learning something new**: Capture insights about your own process or preferences
 - **Periodic reviews**: Schedule regular reflections (monthly, quarterly) to evolve your context
 - **Global config updates**: When reflecting across multiple projects, commit refined global preferences to your
