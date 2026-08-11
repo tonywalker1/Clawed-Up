@@ -112,9 +112,7 @@ complete, production-tested version.
 cd ~/.claude
 git init
 git add .
-git commit -m "Initial commit: existing Claude configuration
-
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+git commit -m "Initial commit: existing Claude configuration"
 ```
 
 ### Step 3: Review What Will Be Committed
@@ -292,9 +290,7 @@ mkdir -p rules skills projects
 
 ```bash
 git add .
-git commit -m "Initial setup: Claude Code configuration
-
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+git commit -m "Initial setup: Claude Code configuration"
 ```
 
 ### Step 5: Create a Private GitHub Repository
@@ -347,9 +343,7 @@ git diff
 
 # Commit specific changes
 git add CLAUDE.md
-git commit -m "Update collaboration preferences for architecture discussions
-
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+git commit -m "Update collaboration preferences for architecture discussions"
 ```
 
 ### Sync Changes
@@ -633,11 +627,9 @@ A well-organized `~/.claude` repository might look like:
 │   ├── file-creation.md               # Prefer heredocs
 │   └── security-review.md             # Security checklist
 ├── skills/
-│   ├── git-commit/
+│   ├── audit-docs/
 │   │   └── SKILL.md
-│   ├── troubleshoot/
-│   │   └── SKILL.md
-│   └── verify-change/
+│   └── reflect/
 │       └── SKILL.md
 └── projects/
     └── my-project-id/

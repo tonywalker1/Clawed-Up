@@ -13,13 +13,16 @@ into other projects.
 
 See **[index.md](index.md)** for a complete catalog of available resources:
 
-- **Collaboration Guidelines** - Expert peer collaborator standards with three-phase workflow and autonomy levels
+- **Collaboration Guidelines** - Expert peer collaborator standards: three-phase workflow, autonomy levels,
+  grounding claims in evidence, and pivot recognition
 - **Guides** - Workflow guides and tutorials for managing Claude Code configurations and collaboration
-- **Git Skills** - Automate feature branch creation, commits, pull requests, and branch cleanup
-- **Documentation Skills** - Audit and maintain project documentation
-- **Collaboration Skills** - Reflect on collaboration and improve your context
+- **Skills** - Documentation drift audits and end-of-session collaboration retrospectives
 - **Prompts** - Coming soon
 - **Utilities** - Coming soon
+
+Scope note: this collection deliberately stays small. Claude Code handles ordinary git workflow, commit
+messages, and pull requests natively, so resources that only restated that behavior have been removed. What
+remains is what the model does not already do on its own.
 
 ## Quick Start
 
@@ -32,8 +35,7 @@ See **[index.md](index.md)** for a complete catalog of available resources:
 /plugin install clawed-up@clawed-up
 ```
 
-2. Use the skills with Claude Code, namespaced under `clawed-up:` (e.g., `/clawed-up:git-start-feature add user
-   authentication`)
+2. Use the skills with Claude Code, namespaced under `clawed-up:` (e.g., `/clawed-up:audit-docs src/`)
 
 ### Contributing to This Project
 
