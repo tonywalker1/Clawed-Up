@@ -1,7 +1,7 @@
 {
   "name": "clawed-up",
-  "description": "Git workflow automation, documentation maintenance, and collaboration skills for Claude Code",
-  "version": "1.0.0",
+  "description": "Documentation drift audits and collaboration retrospectives for Claude Code",
+  "version": "2.0.0",
   "author": {
     "name": "Tony Walker"
   },

@@ -12,13 +12,12 @@ from computing experts and Claude enthusiasts.
 
 ### 1. Start a Feature Branch
 
-Use the provided git workflow automation:
+Branch from an updated main:
 
 ```bash
-/clawed-up:git-start-feature your feature description
+git checkout main && git pull origin main
+git checkout -b your-feature-name
 ```
-
-This will create a properly-named feature branch and update your local main branch.
 
 ### 2. Make Your Changes
 
@@ -29,17 +28,12 @@ This will create a properly-named feature branch and update your local main bran
 
 ### 3. Commit and Push
 
-Use the git workflow automation to complete your feature:
+Commit in imperative mood with subject lines under 72 characters, then push and open a PR:
 
 ```bash
-/clawed-up:git-finish-feature
+git push -u origin your-feature-name
+gh pr create
 ```
-
-This command will:
-- Stage your relevant changes
-- Draft a commit message in imperative mood
-- Push to your remote branch
-- Create a pull request
 
 ### 4. Pull Request Review
 

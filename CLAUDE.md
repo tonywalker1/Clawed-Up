@@ -30,16 +30,12 @@ project's shareable artifact — one file serving both uses, so there is no seco
 
 ## Git Workflow
 
-- **Starting work**: Check the current branch with `git branch --show-current`. If on main/master and the work is
-  a feature or otherwise non-trivial, create a feature branch first with `/clawed-up:git-start-feature`.
-- **Incremental commits**: Use `/clawed-up:git-commit` during development.
-- **Completing features**: Use `/clawed-up:git-finish-feature` to commit, push, and open a PR.
-- **After merge**: Use `/clawed-up:git-cleanup-branch` to delete the local feature branch.
+Feature-branch workflow. Check the current branch before starting; if on main and the work is non-trivial,
+branch from an updated main first. Commit incrementally, then push and open a PR with `gh pr create`.
 
 **Conventions**:
 
 - Commit messages use imperative mood ("Add feature", not "Added feature")
-- Include co-author attribution: `Co-Authored-By: Claude <noreply@anthropic.com>`
 - Subject lines under 72 characters; use the body for details when needed
 - Wrap markdown at 120 columns
 - PR review and merge remain manual (the maintainer handles approval/merge on GitHub)

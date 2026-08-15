@@ -1,130 +1,119 @@
 # Collaboration Reflection Workflow
 
-A structured approach to capturing insights and improving collaboration with Claude Code after completing substantial work.
+A structured approach to capturing insights and improving collaboration with Claude Code after completing
+substantial work.
 
 ## Purpose
 
-The `/clawed-up:reflect` command provides a framework for retrospective feedback after working through a project or problem
-with Claude Code. This is not about blame or criticism—it's about systematic reflection to:
+Claude Code writes memories as it works, but those writes are opportunistic — it saves what happens to stand
+out while it is busy doing something else. The `/clawed-up:reflect` skill is the deliberate pass: a look back
+across the whole session, at leisure, to decide what is actually worth keeping.
 
-- Identify patterns in successful collaboration (both what works in your workflow and what Claude Code does well)
+This is not about blame or criticism. It is systematic reflection to:
+
+- Identify patterns in successful collaboration — both what works in your workflow and what Claude Code does
+  well
 - Surface misunderstandings or gaps in context before they compound
 - Capture technical and architectural patterns worth remembering
-- Continuously refine your `CLAUDE.md` files to represent how you actually work
+- Keep your persistent context an accurate representation of how you actually work
 
 ## When to Use It
 
 Invoke `/clawed-up:reflect` when:
 
 - You've completed a substantial feature, project, or problem-solving session
-- You've encountered situations where collaboration could have been smoother
+- The session had real friction and you want to understand where it came from
 - You've discovered new patterns in how you approach problems
-- You want to update your `CLAUDE.md` files with fresh insights
 - Your approach or constraints have evolved since your last update
 
-You don't need to use this after every interaction—save it for moments of real learning or significant work.
+You don't need this after every interaction. Save it for moments of real learning or significant work.
 
-## What the Command Does
+## What the Skill Does
 
-The command presents four reflection prompts:
+### 1. Reconstructs the session
 
-### 1. **What Went Well**
-Focus on moments where collaboration was smooth and effective:
-- Specific instances where Claude Code identified problems or provided clear guidance
-- Communication patterns that worked particularly well
-- Architectural or technical decisions that proved sound
-- Times when you felt well-understood and supported
+Before offering observations, it checks git history and the actual diff rather than relying on recall of the
+conversation. What changed, where the work stalled, where it reversed direction.
 
-### 2. **What Didn't Work**
-Be direct about friction points:
-- Where Claude Code gave bad advice, missed architectural issues, or went down wrong paths
-- Misunderstandings about your requirements or constraints
-- Suggestions that contradicted your stated preferences or infrastructure decisions
-- Mistakes and the underlying lessons (focus on wisdom, not blame)
+### 2. Presents four areas
 
-### 3. **Patterns Worth Capturing**
-Identify recurring themes:
-- Technical or architectural patterns you frequently use
-- Communication or collaboration patterns that were effective
-- Process patterns (how you approached the problem, your testing/iteration style)
-- Gaps between Claude Code's current understanding and how you actually work
+**What went well** — decisions that held up, framings that led somewhere good, places where pushback or a
+clarifying question saved effort.
 
-### 4. **Suggested CLAUDE.md Updates**
-Translate insights into actionable context updates:
-- Specify which `CLAUDE.md` file(s) to update (global `~/.claude/CLAUDE.md` or project-level)
-- Provide both the conceptual idea and exact text to add
-- Format suggestions as they would appear in the file
+**What didn't work** — bad advice given, issues missed, wrong paths pursued and how long before they were
+noticed, requirements misread, suggestions that contradicted preferences you had already stated. This section
+is the point of the exercise; a reflection that softens it is not worth running.
 
-## Using Reflection Feedback
+**Patterns worth capturing** — technical and architectural choices likely to recur, process patterns in how you
+approach diagnosis and iteration, and gaps between what Claude Code's instructions say and how the work
+actually went.
 
-After completing the reflection:
+**What to persist** — concrete text, routed to a specific destination.
 
-1. **Review the suggestions** - Decide which updates are worth capturing in your `CLAUDE.md` files
-2. **Update your context** - Use Claude Code to help integrate changes into `~/.claude/CLAUDE.md` or project-level
-   `CLAUDE.md`
-3. **Keep it pragmatic** - Prioritize the 3-5 most important observations; don't aim for comprehensive updates
+It prioritizes the three to five observations that would change future behavior. A comprehensive list is a
+worse deliverable than a short sharp one.
 
-Claude Code can help you refine and integrate these changes directly—just ask.
+## Where Insights Go
+
+Not everything belongs in the same place, and most things belong in none of them.
+
+| Insight | Destination |
+|---|---|
+| How Claude should work — corrections, confirmed approaches | a `feedback` memory, with the reasoning |
+| Who you are — role, expertise, standing preferences | a `user` memory |
+| Ongoing goals or constraints not derivable from the code | a `project` memory |
+| External resources — dashboards, tickets, docs | a `reference` memory |
+| A convention for one repo, binding on anyone working in it | that project's `CLAUDE.md` |
+| A standing preference across all your projects | your global `CLAUDE.md` |
+| Anything the code, tests, or git history already record | nowhere |
+
+The rough split: **memory** holds what was learned about working with you; **`CLAUDE.md`** holds rules a
+different collaborator would also need to follow.
+
+A retrospective is also the right moment to prune. If a memory turns out to have been wrong, it gets deleted,
+not just supplemented.
 
 ## Example Use Cases
 
-### Case 1: Architectural Clarity
-After building a complex feature, you realize Claude Code could have pushed back harder on your initial design.
-You reflect to capture what signs you should have noticed, then add a note to your `CLAUDE.md` about architectural
-decision-making patterns.
+### Case 1: Architectural clarity
 
-### Case 2: Context Gap
-You find yourself explaining a constraint multiple times. Reflection helps you identify what wasn't clear in your
-existing `CLAUDE.md`, so you update it to prevent future confusion.
+After building a complex feature, you realize Claude Code should have pushed back harder on your initial
+design. Reflection captures which signals were present and missed, and turns that into a `feedback` memory
+about when to challenge a design rather than implement it.
 
-### Case 3: Communication Pattern
-You discover a way of asking questions or framing problems that leads to much better solutions. You document this
-pattern in your `CLAUDE.md` so it becomes the default approach.
+### Case 2: Context gap
 
-## Handling Version-Controlled Global Configuration
+You find yourself explaining the same constraint three times. Reflection identifies what was missing, and the
+constraint becomes a `project` memory or a `CLAUDE.md` line so it does not need a fourth explanation.
 
-If your `~/.claude` directory is managed as a git repository, the `/clawed-up:reflect` command includes support for committing
-global CLAUDE.md changes to your remote:
+### Case 3: Communication pattern
 
-1. After you provide reflection feedback and suggested CLAUDE.md updates, the command checks if `~/.claude` is a git repo
-2. If it is, you'll be asked whether you want to commit these changes to your remote
-3. If you agree:
-   - Claude Code switches to the `~/.claude` directory
-   - Drafts a commit message reflecting the collaboration insights
-   - Waits for your approval before committing
-   - Commits and pushes to your remote
-   - Switches back to your original working directory
-4. If you decline, the changes are applied locally but not committed
+You discover a way of framing problems that consistently leads to better solutions. That becomes a `user`
+memory so it is the default going forward.
 
-This integration supports keeping your global collaboration context synced across machines while maintaining version
-history. Project-level CLAUDE.md changes are not affected by this workflow—those remain local to each project unless
-you manually commit them.
+## Version-Controlled Global Configuration
 
-### Prerequisites for Git Integration
+If your `~/.claude` directory is managed as a git repository, the skill offers to commit and push changes made
+under it:
 
-If you want this feature to work, ensure:
-- Your `~/.claude` directory is initialized as a git repository (`git init ~/.claude`)
-- You have a configured remote (typically `origin` on GitHub or another git host)
-- Your git credentials are set up to push to the remote
+1. It checks whether `~/.claude` is a git repository
+2. If so, it asks whether to commit — it will not commit without approval
+3. On approval, it drafts a commit message reflecting the insights, commits, and pushes
+4. If you decline, changes stay local
 
-If `~/.claude` is not a git repo, the command simply applies changes locally without prompting for commits.
+This keeps your global collaboration context synced across machines with version history. If `~/.claude` is not
+a git repository, the skill says so plainly and leaves the changes local.
 
-## Integration with Workflow
+### Prerequisites
 
-The reflection workflow is independent but pairs well with:
-
-- **After `/clawed-up:git-finish-feature`**: Once a feature is shipped, reflect on how the collaboration went
-- **After learning something new**: Capture insights about your own process or preferences
-- **Periodic reviews**: Schedule regular reflections (monthly, quarterly) to evolve your context
-- **Global config updates**: When reflecting across multiple projects, commit refined global preferences to your
-  version-controlled `~/.claude` directory
+- `~/.claude` initialized as a git repository (`git init ~/.claude`)
+- A configured remote
+- Credentials set up to push
 
 ## Tips for Effective Reflection
 
-- **Be specific**: Vague feedback ("it went well") is less useful than concrete examples
-- **Focus on patterns**: Individual mistakes matter less than recurring patterns
-- **Think systemically**: Consider how constraints, priorities, and context affected collaboration
-- **Update incrementally**: You don't need to capture everything at once—small, frequent updates to `CLAUDE.md`
-  are more maintainable than major rewrites
-- **Honor your time**: If context is tight (reflected in the token budget), focus on the 3-5 most important
-  observations rather than exhaustively documenting everything
+- **Be specific** — name the moment, not the category. "It went well" is not usable feedback
+- **Focus on patterns** — an individual mistake matters less than a recurring one
+- **Think systemically** — consider how constraints, priorities, and context shaped the collaboration
+- **Update incrementally** — small frequent updates beat periodic rewrites
+- **Correct the record** — if Claude's summary of what happened is wrong, say so before it writes anything
